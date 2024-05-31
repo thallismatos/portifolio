@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore meu portfólio de desenvolvimento web - onde a criatividade encontra a funcionalidade!">
+    <meta name="description"
+        content="Explore meu portfólio de desenvolvimento web - onde a criatividade encontra a funcionalidade!">
 
     <title>Portfolio</title>
 
     <link rel="stylesheet" href="src/styles/reset.css">
     <link rel="stylesheet" href="src/styles/vars.css">
-    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/nav-ct-footer.css">
     <link rel="stylesheet" href="src/styles/media.css">
 
     <link rel="shortcut icon" href="src/assets/icons/favicon.png" type="image/x-icon">
@@ -24,7 +26,6 @@
             <span class="logo">tm</span>
             <ul class="links">
                 <li><a href="#sobre-mim" class="home">Sobre</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
@@ -42,35 +43,64 @@
                         <button class="btn btn-contato">Contato</button>
                     </div>
                     <div class="network">
-                        <a href="https://www.instagram.com/thallis.matos_"><i class="bi bi-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/thallismatos/"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://github.com/thallismatos"><i class="bi bi-github"></i></a>
+                        <a href="https://www.instagram.com/thallis.matos_" title="Instagram" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/thallismatos/" title="LinkedIn" target="_blank"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/thallismatos" title="GitHub" target="_blank"><i
+                                class="bi bi-github"></i></a>
                     </div>
                 </div>
-                <div class="sobre-mim-img">
-                    <img src="src/assets/icons/perfil.jpg" alt="foto pessoal">
-                </div>
+                <figure class="sobre-mim-img">
+                    <img src="src/assets/icons/perfil.jpg" alt="">
+                </figure>
             </header>
         </section>
-
         <section>
-            <div class="sobre">
+            <header class="sobre" id="sobre-mim">
                 <p class="destaque">Conheça mais!</p>
-                <h2 class="texto-destaque">sobre mim</h2>
-            </div>
-            <header class="sobre-mim">
-                <div class="sobre-mim-img">
-                    <img src="src/assets/icons/perfil.jpg" alt="">
-                </div>
-                <div class="sobre-mim-cabecalho">
-                    <p>Olá! Sou Thallis Matos, um entusiasta da tecnologia e estudante de 22 anos, atualmente no 3º período do curso de Ciência da Computação. Desde cedo, minha paixão pela tecnologia tem me impulsionado a buscar constantemente por oportunidades de aprendizado e crescimento, sempre procurando por cursos e atividades que expandam minha base de conhecimento.</p>
-                    <p>Iniciei minha jornada na faculdade em fevereiro de 2023, trazendo comigo um sólido conhecimento em hardware. Desde então, tenho aproveitado ao máximo as oportunidades para aprimorar minhas habilidades em programação, análise de sistemas e resolução de problemas.</p>
-                    <p>Estou em busca de oportunidades de estágio e projetos que me permitam expandir meu conhecimento e desenvolver minhas habilidades na área de tecnologia.</p>
-                </div>
+                <h4 class="texto-destaque">sobre mim</h4>
             </header>
+            <div class="sobre-mim">
+                <figure class="sobre-mim-img-2">
+                    <img src="src/assets/icons/perfil-1.jpg" alt="">
+                </figure>
+                <div class="sobre-mim-cabecalho">
+                    <div class="dados">
+                        <section class="curso">
+                            <i class="bi bi-mortarboard-fill"></i>
+                            <h3>Ciência da computação</h3>
+                            <span>3º Período</span>
+                        </section>
+                        <section class="habilidades">
+                            <i class="bi bi-star-fill"></i>
+                            <h3>Habilidades</h3>
+                            <figure class="linguagens">
+                                <img src="src/assets/icons/html.png" alt="Logo HTML5">
+                                <img src="src/assets/icons/css.png" alt="Logo CSS3">
+                            </figure>
+                        </section>
+                    </div>
+                    <div class="sobre-mim-text">
+                        <p>Olá! Sou <strong><em>Thallis Matos</em></strong>, um entusiasta da tecnologia e estudante de
+                            22 anos, sempre em busca
+                            de oportunidades para expandir meu conhecimento. Desde fevereiro de 2023, quando iniciei
+                            minha jornada na faculdade, tenho aproveitado ao máximo para aprimorar minhas habilidades em
+                            programação, análise de sistemas e resolução de problemas, complementando meu sólido
+                            conhecimento em hardware. Recentemente, comecei a estudar
+                            <strong><em>JavaScript</em></strong> e
+                            <strong><em>Python</em></strong> para ampliar
+                            ainda mais minhas competências técnicas.
+                        </p><br>
+                        <p>Estou à procura de oportunidades de estágio e projetos na área de tecnologia que me permitam
+                            continuar crescendo e desenvolvendo minhas habilidades. Meu objetivo é aplicar e expandir o
+                            que tenho aprendido, contribuindo de maneira significativa para a equipe e projetos em que
+                            me envolver.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-
     <footer>
         <p class="footer-copy">Copyright 2024.</p>
         <p class="footer-autor">Feito por Thallis Matos!</p>

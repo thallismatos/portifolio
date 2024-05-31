@@ -1,48 +1,3 @@
-/* Navegação  */
-
-nav {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   max-width: var(--max-width);
-   margin: auto;
-   padding: 1.5rem 3rem;
-}
-.links {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
-   text-align: center;
-   align-self: center;
-   gap: 1rem;
-}
-.links li a {
-   color: var(--color-primary);
-   text-decoration: none;
-   text-decoration-color: white;
-   font-size: 1.5rem;
-   font-weight: 400;
-}
-.links li a:hover {
-   color: var(--color-secundary);
-   text-decoration: underline;
-   text-decoration-color: var(--color-secundary)
-}
-.links li a.home {
-   color: var(--color-secundary);
-}
-.logo {
-   font-size: 2rem;
-   font-weight: 400;
-   text-transform: uppercase;
-   border: 0.1rem solid #000000;
-   border-radius: 50%;
-   padding: 1rem;
-}
-.logo:hover {
-   cursor: default;
-}
-
 /* Apresentação */
 
 section {
@@ -68,7 +23,6 @@ section {
    font-size: 1rem;
    font-weight: 600;
 }
-
 h1 {
    font-size: 2.5rem;
 }
@@ -102,7 +56,7 @@ h1 {
 .btn-cv,
 .btn-contato:hover {
    background: var(--color-btn);
-   color: var( --color-text-btn);
+   color: var(--color-text-btn);
 }
 .btn-contato {
    background: none;
@@ -146,7 +100,7 @@ h1 {
    transform: scale(1.2);
 }
 
-/* Foto de Perfil */
+/* Minha Foto */
 
 .sobre-mim-img {
    display: flex;
@@ -179,35 +133,76 @@ h1 {
    justify-content: center;
    flex-direction: row;
    flex-wrap: wrap;
-   gap: 5rem;
+   gap: 2rem;
    height: 100vh;
 }
+
+/* Minha Foto */
+
+.sobre-mim-img-2 {
+   display: flex;
+   justify-content: center;
+   align-self: center;
+}
+.sobre-mim-img-2 img {
+   height: 650px;
+   width: 400px;
+}
+
+/* Caixa do lado direito */
+
 .sobre-mim-cabecalho {
    width: 700px;
    display: flex;
    flex-direction: column;
    text-align: justify;
    align-self: center;
-   gap: 1rem;
-   padding: 2.5rem;
-   background-color: #b5bbbf;
+   gap: 3rem;
    border-radius: 1rem;
 }
-.sobre-mim-cabecalho p{
-  color: var(--color-primary);
-  font-size: 1.1rem;
-}
 
-/* Rodapé */
- 
-footer {
-   max-width: var(--max-width);
+/* Curso e Habilidades */
+.dados {
+   display: flex;
+   flex-direction: row;
+   text-align: center;
+   gap: 0.5rem;
+}
+.curso,
+.habilidades {
    display: flex;
    flex-direction: column;
-   align-items: center;
+   padding: 1.5rem;
+   border: 0.1rem solid gray;
+   border-radius: 0.5rem;
+   width: 350px;
+   margin: 0;
+}
+.curso .bi,
+.habilidades .bi {
+   font-size: 2rem;
+}
+.curso h3,
+.habilidades h3 {
+   font-size: 1.25rem;
+}
+.curso span {
+   font-size: 1.25rem;
+}
+.linguagens {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
    gap: 0.5rem;
-   padding: 3rem;
-   margin: auto;
-   font-size: 1rem;
-   font-weight: 600;
+   margin: 0.5rem 0 0 0;
+}
+.linguagens img {
+   height: 2.5rem;
+}
+
+/* Carta de apresentação */
+
+.sobre-mim-text p {
+   color: var(--color-primary);
+   font-size: 1.1rem;
 }
