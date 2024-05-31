@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+
+:root{
+    /* COLORS */
+   
+    --background-instagram: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+    --background-linkedin: #007AB9;
+    --background-github: #4D2A7E;
+    --background-devweb-icon: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+   
+
+    --color-btn: #353535;
+    --color-btn-border: #353535;
+    --color-btn-border-w: #fff;
+    --color-icon: #fff; 
+    --color-primary: #000000; 
+    --color-secundary: #595c5e; 
+    --color-text-btn: #fff;
+
+    /* Outras propriedades */
+    --max-width: 1200px;
+}

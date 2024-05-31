@@ -1,0 +1,213 @@
+/* Navegação  */
+
+nav {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   max-width: var(--max-width);
+   margin: auto;
+   padding: 1.5rem 3rem;
+}
+.links {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   text-align: center;
+   align-self: center;
+   gap: 1rem;
+}
+.links li a {
+   color: var(--color-primary);
+   text-decoration: none;
+   text-decoration-color: white;
+   font-size: 1.5rem;
+   font-weight: 400;
+}
+.links li a:hover {
+   color: var(--color-secundary);
+   text-decoration: underline;
+   text-decoration-color: var(--color-secundary)
+}
+.links li a.home {
+   color: var(--color-secundary);
+}
+.logo {
+   font-size: 2rem;
+   font-weight: 400;
+   text-transform: uppercase;
+   border: 0.1rem solid #000000;
+   border-radius: 50%;
+   padding: 1rem;
+}
+.logo:hover {
+   cursor: default;
+}
+
+/* Apresentação */
+
+section {
+   max-width: var(--max-width);
+   margin: auto;
+}
+.apresentacao {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap-reverse;
+   gap: 5rem;
+   height: 85vh;
+}
+.apresentacao-cabecalho {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   align-self: center;
+   gap: 0.5rem;
+   line-height: 2.5rem;
+}
+.boas-vindas {
+   font-size: 1rem;
+   font-weight: 600;
+}
+
+h1 {
+   font-size: 2.5rem;
+}
+.web {
+   font-size: 1.5rem;
+   font-weight: 600;
+   color: var(--color-secundary);
+}
+
+/* Botões */
+
+.botoes {
+   display: flex;
+   justify-content: center;
+   gap: 1rem;
+}
+.btn {
+   font-weight: 600;
+   transition: all 300ms ease;
+   padding: 1rem;
+   width: 8rem;
+   border-radius: 2rem;
+}
+.btn-cv,
+.btn-contato {
+   border: var(--color-btn-border) 0.1rem solid;
+}
+.btn:hover {
+   cursor: pointer;
+}
+.btn-cv,
+.btn-contato:hover {
+   background: var(--color-btn);
+   color: var( --color-text-btn);
+}
+.btn-contato {
+   background: none;
+}
+.btn-contato:hover {
+   border: var(--color-btn-border-w) 0.1rem solid;
+}
+
+/* Redes Sociais */
+
+.network {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0.5rem;
+   margin: 0.5rem 0 0 0;
+}
+.network a {
+   color: var(--color-icon)
+}
+.network a .bi {
+   background: var(--background-devweb-icon);
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   padding: 0.5rem;
+   border-radius: 50%;
+   font-size: 1rem;
+   transition: transform 0.7s;
+}
+.network a .bi-instagram:hover {
+   background: var(--background-instagram);
+}
+.network a .bi-linkedin:hover {
+   background: var(--background-linkedin);
+}
+.network a .bi-github:hover {
+   background: var(--background-github);
+}
+.network a .bi:hover {
+   transform: scale(1.2);
+}
+
+/* Foto de Perfil */
+
+.sobre-mim-img {
+   display: flex;
+   justify-content: center;
+   margin: auto 0;
+}
+.sobre-mim-img img {
+   height: 25rem;
+   width: 25rem;
+   border-radius: 50%;
+}
+
+/* Sessão Sobre mim */
+
+.sobre {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   padding: 2rem 0;
+}
+.destaque {
+   font-size: 1rem;
+}
+.texto-destaque {
+   font-size: 2rem;
+   text-transform: uppercase;
+}
+.sobre-mim {
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 5rem;
+   height: 100vh;
+}
+.sobre-mim-cabecalho {
+   width: 700px;
+   display: flex;
+   flex-direction: column;
+   text-align: justify;
+   align-self: center;
+   gap: 1rem;
+   padding: 2.5rem;
+   background-color: #b5bbbf;
+   border-radius: 1rem;
+}
+.sobre-mim-cabecalho p{
+  color: var(--color-primary);
+  font-size: 1.1rem;
+}
+
+/* Rodapé */
+ 
+footer {
+   max-width: var(--max-width);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 0.5rem;
+   padding: 3rem;
+   margin: auto;
+   font-size: 1rem;
+   font-weight: 600;
+}
