@@ -1,6 +1,6 @@
 /* Navegação  */
 
-nav {
+.nav-topo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -19,7 +19,6 @@ nav {
  .links li a {
     color: var(--color-primary);
     text-decoration: none;
-    text-decoration-color: white;
     font-size: 1.5rem;
     font-weight: 400;
  }
@@ -49,7 +48,7 @@ nav {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   height: 46vh;
+   height: auto;
    margin: auto;
 }
 .contato-info {
@@ -62,7 +61,7 @@ nav {
    flex-direction: row;
    justify-content: space-between;
    gap: 0.5rem;
-   border: 0.1rem solid gray;
+   border: 0.1rem solid var(--color-btn-border);
    border-radius: 2rem;
    padding: 1rem;
 }
@@ -85,6 +84,24 @@ nav {
    font-size: 1.2rem;
    cursor: pointer;
 }
+.nav-contato {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   max-width: var(--max-width);
+   margin: 2rem 0 0 0;
+}
+.links- {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   text-align: center;
+   align-self: center;
+   gap: 1rem;
+}
+.links- li a{
+   color: var(--color-secundary);
+}
 
 /* Rodapé */ 
 
@@ -94,7 +111,7 @@ footer {
    flex-direction: column;
    align-items: center;
    gap: 0.5rem;
-   padding: 0 1rem 1.5rem;
+   padding: 2rem;
    margin: auto;
    font-size: 1rem;
    font-weight: 600;

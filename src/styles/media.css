@@ -1,11 +1,87 @@
+/* Comuns - Mobile e Tablet */
+
+@media (width <= 1200px) {
+
+    /* Sessáo - Apresentação */
+
+    .apresentacao {
+        gap: 2rem;
+    }
+    .apresentacao-cabecalho {
+        line-height: 1.5rem;
+    }
+    .apresentacao-img img {
+        height: 16rem;
+        width: 16rem;
+    }
+    h1{
+        font-size: 1.8rem;
+    }
+    .web {
+        font-size: 1.3rem;
+    }
+
+    /* Botões - Contato e CV */
+
+    .btn-contato:hover {
+        background: transparent;
+        color: var(--color-primary);
+     }
+     .btn-contato:hover {
+        border: var(--color-btn-border) 0.1rem solid;
+     }
+
+    /* Sessão - Sobre Mim */
+
+    .sobre-mim {
+        width: 100%;
+    }
+    .sobre-mim-cabecalho{
+        gap: 1.5rem;
+    }
+    .sobre-mim-img {
+        display: none;
+    }
+    .curso,
+    .habilidades {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+
+     /* Redes Sociais */
+
+     .network a .bi {
+        transition: none;
+     }
+     .network a .bi-instagram {
+        background: var(--background-instagram);
+     }
+     .network a .bi-linkedin {
+        background: var(--background-linkedin);
+     }
+     .network a .bi-github {
+        background: var(--background-github);
+     }
+     .network a .bi:hover {
+        transform: scale(1);
+     }
+
+      /* Rodapé */
+
+    footer {
+        padding: 2rem 0; 
+    }
+}
+
 /* Mobile */
 
 @media (width <=576px) {
 
     /* Navegação */
 
-    nav {
-        padding: 1.5rem 1rem;
+    .nav-topo {
+        padding: 1.5rem;
     }
     .links {
         display: none;
@@ -14,142 +90,38 @@
     /* Sessáo - Apresentação */
 
     .apresentacao {
-        gap: 0;
         height: 75vh;
+        flex-wrap: wrap-reverse;
+        align-content: center;
     }
-    .apresentacao-img img {
-        height: 15rem;
-        width: 15rem;
-    } 
 
+    /* Botões - Contato e CV */
+
+    .botoes {
+        margin: 1rem 0 0 0;
+    }
     /* Sessão - Sobre Mim */
 
-    .sobre-mim-img {
-        display: none;
-    }
-    .sobre-mim-cabecalho {
-        gap: 1.5rem;
-    }
     .dados {
         flex-direction: column;
     }
-    .curso,
-    .habilidades {
-        width: 100%;
-        padding: 1.5rem;
-    }
 
     /* Rodapé */
 
-    #contato {
-        height: 25vh;
-    }
-    .titulo-pagina {
-        padding: 1rem;
-    }
     .contato-info- a {
         font-size: 1rem;
     }
-    footer {
-        padding: 1.5rem 0 1.5rem 0;
-    }
 }
 
-/* Tablet (tela em pé) */
+/* Mobile (tela virada) e tablet */
 
-@media (width >=577px) and (width <=768px) {
+@media (width >=577px) and (width <=1200px) {
 
-    /* Sessáo - Apresentação  */
+    /* Sessão - Apresentação */
 
     .apresentacao {
         flex-direction: row;
-        height: 45vh;
-        gap: 2rem;
-    }
-    .apresentacao-img img {
-        height: 15rem;
-        width: 15rem;
-    }
-
-     /* Sessão - Sobre Mim */
-
-    .sobre-mim-img {
-        display: none;
-    }
-    .sobre-mim-cabecalho {
-        width: 100%;
-        gap: 3rem;
-    }
-
-    /* Rodapé */
-
-    #contato {
-        height: 25vh;
-    }
-    footer {
-        padding: 2rem 0;
-    }
-}
-
-/*  Mobile e Tablet (tela virada) */
-
-@media (width >=769px) and (width <=850px)   {
-
-    /* Sessão - Apresentação */
-
-    .apresentacao {
         flex-wrap: nowrap;
-        gap: 1rem;
-    }
-    .apresentacao-img img {
-        height: 20rem;
-        width: 20rem;
-    } 
-
-    /* Sessão - Sobre Mim */
-
-    .sobre-mim-img {
-        display: none;
-    }
-
-    /* Rodapé */
-
-    #contato {
-        height: 50vh;
-    }
-    footer {
-        padding: 1.5rem 0;
-    }
-}
-
-/*  Tablet (tela virada) */
-
-@media (width >=851px) and (width <=1195px)   {
-
-    /* Sessão - Apresentação */
-
-    .apresentacao {
-        height: 45vh;
-        flex-wrap: nowrap;
-        gap: 1rem;
-    }
-    .apresentacao-img img {
-        height: 20rem;
-        width: 20rem;
-    } 
-
-    /* Sessão - Sobre Mim */
-
-    .sobre-mim-img {
-        display: none;
-    }
-
-    /* Rodapé */
-
-    #contato {
-        height: 30vh;
-    }
-    footer {
-        padding: 1.5rem 0;
+        height: auto;
     }
 }
