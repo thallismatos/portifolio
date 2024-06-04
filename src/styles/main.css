@@ -1,10 +1,11 @@
-/* Apresentação */
-
 section {
    max-width: var(--max-width);
    margin: auto;
    padding: 0 2rem;
 }
+
+/* Apresentação */
+
 .apresentacao {
    display: flex;
    justify-content: center;
@@ -63,7 +64,7 @@ h1 {
    background: none;
 }
 .btn-contato:hover {
-   border: var(--color-btn-border-w) 0.1rem solid;
+   border: var(--color-btn-border-hover-ct) 0.1rem solid;
 }
 
 /* Redes Sociais */
@@ -79,7 +80,6 @@ h1 {
    color: var(--color-icon)
 }
 .network a .bi {
-   background: var(--background-devweb-icon);
    display: flex;
    align-items: center;
    gap: 0.5rem;
@@ -89,13 +89,13 @@ h1 {
    transition: transform 0.7s;
    cursor: pointer;
 }
-.network a .bi-instagram:hover {
+.network a .bi-instagram {
    background: var(--background-instagram);
 }
-.network a .bi-linkedin:hover {
+.network a .bi-linkedin {
    background: var(--background-linkedin);
 }
-.network a .bi-github:hover {
+.network a .bi-github {
    background: var(--background-github);
 }
 .network a .bi:hover {

@@ -1,6 +1,6 @@
 /* Comuns - Mobile e Tablet */
 
-@media (width <= 1200px) {
+@media (width <=1200px) {
 
     /* Sessáo - Apresentação */
 
@@ -14,7 +14,8 @@
         height: 16rem;
         width: 16rem;
     }
-    h1{
+
+    h1 {
         font-size: 1.8rem;
     }
     .web {
@@ -26,17 +27,17 @@
     .btn-contato:hover {
         background: transparent;
         color: var(--color-primary);
-     }
-     .btn-contato:hover {
+    }
+    .btn-contato:hover {
         border: var(--color-btn-border) 0.1rem solid;
-     }
+    }
 
     /* Sessão - Sobre Mim */
 
     .sobre-mim {
         width: 100%;
     }
-    .sobre-mim-cabecalho{
+    .sobre-mim-cabecalho {
         gap: 1.5rem;
     }
     .sobre-mim-img {
@@ -49,28 +50,25 @@
     }
 
 
-     /* Redes Sociais */
+    /* Redes Sociais */
 
-     .network a .bi {
+    .network a .bi {
         transition: none;
-     }
-     .network a .bi-instagram {
-        background: var(--background-instagram);
-     }
-     .network a .bi-linkedin {
-        background: var(--background-linkedin);
-     }
-     .network a .bi-github {
-        background: var(--background-github);
-     }
-     .network a .bi:hover {
+    }
+    .network a .bi:hover {
         transform: scale(1);
-     }
+    }
 
-      /* Rodapé */
+    /* links Contato */
+
+    .links- li a:hover {
+        text-decoration: none;
+    }
+
+    /* Rodapé */
 
     footer {
-        padding: 2rem 0; 
+        padding: 2rem 0;
     }
 }
 
@@ -100,6 +98,7 @@
     .botoes {
         margin: 1rem 0 0 0;
     }
+
     /* Sessão - Sobre Mim */
 
     .dados {
