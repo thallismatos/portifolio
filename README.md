@@ -6,7 +6,7 @@
 
 ## 🖱 Acesso
 
--> Para acessar o site clique [aqui]().
+-> Para acessar o site clique [aqui](https://thallismatos.github.io/portifolio/).
 
 ## 🎯 Tecnologias Utilizadas
 
@@ -16,7 +16,7 @@
 ## 💻 Layouts
 
 - Desktop:
-<img src="src/assets/telas/desktop.gif" width="50%">
+<img src="src/assets/telas/desktop.gif" width="60%">
 
 - Mobile:
 <img src="src/assets/telas/mobile.gif" width="25%">
