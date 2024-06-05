@@ -9,15 +9,17 @@
 -> Para acessar o site clique [aqui]().
 
 ## 🎯 Tecnologias Utilizadas
+
 - HTML
 - CSS
 
 ## 💻 Layouts
+
 - Desktop:
-<img src="" width="70%">
+<img src="src/assets/telas/desktop.gif" width="70%">
 
 - Mobile:
-<img src="" width="70%">
+<img src="src/assets/telas/mobile.gif" width="70%">
 
 ---
 <p align="center">Feito by Thallis!</p>
