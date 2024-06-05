@@ -16,10 +16,10 @@
 ## 💻 Layouts
 
 - Desktop:
-<img src="src/assets/telas/desktop.gif" width="70%">
+<img src="src/assets/telas/desktop.gif" width="50%">
 
 - Mobile:
-<img src="src/assets/telas/mobile.gif" width="20%">
+<img src="src/assets/telas/mobile.gif" width="25%">
 
 ---
 <p align="center">Feito by Thallis!</p>
