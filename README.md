@@ -19,7 +19,7 @@
 <img src="src/assets/telas/desktop.gif" width="70%">
 
 - Mobile:
-<img src="src/assets/telas/mobile.gif" width="50%">
+<img src="src/assets/telas/mobile.gif" width="20%">
 
 ---
 <p align="center">Feito by Thallis!</p>
