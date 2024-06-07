@@ -121,6 +121,7 @@ h1 {
    flex-direction: column;
    text-align: center;
    padding: 2rem;
+   line-height: 1.75rem;
 }
 .destaque {
    font-size: 1rem;
@@ -128,7 +129,6 @@ h1 {
 }
 .texto-destaque {
    font-size: 2rem;
-   text-transform: uppercase;
 }
 .sobre-mim {
    display: flex;

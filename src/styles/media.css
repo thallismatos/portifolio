@@ -76,19 +76,27 @@
 
 @media (width <=576px) {
 
+    /* Nav Mobile */
+
+    .bi-list {
+        display: block;
+        align-self: center;
+        font-size: 2.5rem;
+    }
+    
     /* Navegação */
 
     .nav-topo {
         padding: 1.5rem;
     }
     .links {
-        display: none;
+        display: none
     }
 
     /* Sessáo - Apresentação */
 
     .apresentacao {
-        height: 75vh;
+        height: 80vh;
         flex-wrap: wrap-reverse;
         align-content: center;
     }

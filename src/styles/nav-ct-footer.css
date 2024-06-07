@@ -40,7 +40,13 @@
  }
  .logo:hover {
     cursor: default;
- } 
+ }
+
+ /* Nav Mobile */
+
+.bi-list {
+   display: none;
+ }
 
  /* Informações de Contato */
  
