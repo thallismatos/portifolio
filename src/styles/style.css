@@ -117,6 +117,9 @@ ul {
 
 a {
   text-decoration: none;
+  color: inherit;
+  background: none;
+  outline: none;
 }
 
 blockquote,
@@ -140,4 +143,64 @@ table {
 button {
   border: none;
   cursor: pointer;
+}
+
+.sombra {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  padding: 2.5rem 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+}
+.header-container .menu {
+  display: flex;
+  gap: 2.5rem;
+}
+.header-container .menu ul li a {
+  color: #0D0D0D;
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  line-height: normal;
+}
+
+.section-container {
+  max-width: 1200px;
+  padding: 2.5rem 0;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  align-content: center;
+  gap: 6rem;
+}
+.section-container .text {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.section-container h1 {
+  color: #0D0D0D;
+  font-size: 4.5rem;
+  font-weight: 700;
+  font-family: "Fira Sans", sans-serif;
+  line-height: 1.125;
+}
+.section-container .location {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  color: #414142;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  line-height: normal;
 }/*# sourceMappingURL=style.css.map */

@@ -21,22 +21,32 @@
     @warn "O peso da fonte '#{$weight-key}' não foi encontrado no mapa de pesos.";
   }
 
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Fira Sans',
+  sans-serif;
 
   line-height: $line-height;
 }
 
-@mixin flex($justify: center, $align: center, $gap: 0) {
+@mixin flex($justify: center, $align: center, $direction: row, $gap: 0) {
   display: flex;
   justify-content: $justify;
   align-items: $align;
+  flex-direction: $direction;
   gap: $gap;
 }
 
-@mixin grid($columns: 2, $gap: 0 ) {
+@mixin grid($columns: 1fr, $align-items: center, $align-content: center, $gap: 0) {
   display: grid;
-  grid-template-columns: repeat($columns, 1fr);
+  grid-template-columns: $columns;
+  align-items: $align-items;
+  align-content: $align-content;
   gap: $gap;
+}
+
+@mixin container($max-width: 1200px, $padding: 2.5rem 0) {
+  max-width: $max-width;
+  padding: $padding;
+  margin: auto;
 }
 
 @mixin mobile() {}

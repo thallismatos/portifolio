@@ -1,0 +1,16 @@
+.sombra {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  @include container;
+  @include flex(space-between);
+
+  .menu {
+    @include flex(null, null, null, 2.5rem);
+
+    ul li a {
+      @include font($c8, 18, regular);
+    }
+  }
+}
