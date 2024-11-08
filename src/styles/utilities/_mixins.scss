@@ -1,0 +1,44 @@
+@mixin font($color,
+  $size-key,
+  $weight-key: regular,
+  $line-height: normal,
+  $font-family: 'Fira Sans') {
+  color: $color;
+
+  @if map-has-key($font-sizes, $size-key) {
+    font-size: map-get($font-sizes, $size-key);
+  }
+
+  @else {
+    @warn "O tamanho da fonte '#{$size-key}' não foi encontrado no mapa de tamanhos.";
+  }
+
+  @if map-has-key($font-weights, $weight-key) {
+    font-weight: map-get($font-weights, $weight-key);
+  }
+
+  @else {
+    @warn "O peso da fonte '#{$weight-key}' não foi encontrado no mapa de pesos.";
+  }
+
+  font-family: 'Fira Sans', sans-serif;
+
+  line-height: $line-height;
+}
+
+@mixin flex($justify: center, $align: center, $gap: 0) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin grid($columns: 2, $gap: 0 ) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $gap;
+}
+
+@mixin mobile() {}
+
+@mixin tablet() {}

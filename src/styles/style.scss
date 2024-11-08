@@ -7,12 +7,10 @@
 @import 'base/reset';
 
 // Importações de componentes
-@import 'components/buttons';
 
 // Importações de layout
 @import 'layout/header';
 @import 'layout/footer';
-@import 'layout/grid';
 
 // Estilos específicos de cada página
 @import 'pages/index';
