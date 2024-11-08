@@ -1,0 +1,30 @@
+.section-container {
+  @include container;
+  @include grid(1fr 2fr, center, center, 6rem);
+
+  .intro-text {
+    @include grid(1fr, null, null, 2rem);
+  }
+
+  h1 {
+    @include font($c8, 72, bold, 1.125);
+    position: relative;
+
+    &:before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 130px;
+      height: 120px;
+      background: url("../assets/icons/detalhes.svg") no-repeat center;
+      z-index: -1;
+      top: -30px;
+      left: -45px;
+    }
+  }
+
+  .location {
+    @include flex(flex-start, center, null, 0.5rem);
+    @include font($c5, 24, regular);
+  }
+}

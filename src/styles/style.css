@@ -145,7 +145,7 @@ button {
   cursor: pointer;
 }
 
-.sombra {
+.shadow {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -181,7 +181,7 @@ button {
   align-content: center;
   gap: 6rem;
 }
-.section-container .text {
+.section-container .intro-text {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
@@ -192,6 +192,18 @@ button {
   font-weight: 700;
   font-family: "Fira Sans", sans-serif;
   line-height: 1.125;
+  position: relative;
+}
+.section-container h1:before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 130px;
+  height: 120px;
+  background: url("../assets/icons/detalhes.svg") no-repeat center;
+  z-index: -1;
+  top: -30px;
+  left: -45px;
 }
 .section-container .location {
   display: flex;
