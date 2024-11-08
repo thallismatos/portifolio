@@ -1,8 +1,4 @@
-@mixin font($color,
-  $size-key,
-  $weight-key: regular,
-  $line-height: normal,
-  $font-family: 'Fira Sans') {
+@mixin font($color, $size-key, $weight-key: regular, $line-height: normal, $font-family: 'Fira Sans') {
   color: $color;
 
   @if map-has-key($font-sizes, $size-key) {
@@ -43,10 +39,30 @@
   gap: $gap;
 }
 
-@mixin container($max-width: 1200px, $padding: 2.5rem 0) {
+@mixin container($max-width: 1200px, $padding: 2.5rem 1.5rem) {
   max-width: $max-width;
   padding: $padding;
   margin: auto;
+}
+
+@mixin card($height: 170px) {
+  @include flex(space-around, flex-start, column);
+  height: $height;
+  padding: 1rem;
+  position: relative;
+  background: $c1;
+  border: 1px solid $c2;
+  border-radius: $border-radius;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 0.25rem;
+    height: 1.25rem;
+    background: $gradient;
+    top: 10px;
+    left: -4px;
+  }
 }
 
 @mixin mobile() {}

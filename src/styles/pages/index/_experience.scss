@@ -1,0 +1,62 @@
+.section-experience {
+  @include container;
+  @include grid(1fr 2fr, null, center, 7rem);
+
+  .subtitulo {
+    @include font($c6, 144, bold, 1, null);
+    text-transform: uppercase;
+    text-align: start;
+  }
+
+  .container-experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: $border-radius;
+
+    .text-experience {
+      @include font($c5, 24, regular, 1.5, null);
+      text-align: start;
+      padding: 0.5rem 0;
+    }
+
+    .container-cards {
+      @include grid(repeat(auto-fit, minmax(215px, 1fr)), center, center, 1rem);
+      justify-content: center;
+
+      .cards {
+        @include card;
+        border-radius: $border-radius;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 0.25rem;
+          height: 1.25rem;
+          background: $gradient;
+          top: 10px;
+          left: -4px;
+        }
+
+      }
+
+      .subtitulo-card {
+        @include font($c4, 14, regular, 1, null);
+        padding: 0 0 10px 0;
+      }
+
+      .titulo-card {
+        @include font($c7, 20, bold, 1, null);
+      }
+
+      .button {
+        @include font($c1, 20, bold, 1, null);
+        display: inline-block;
+        background: $gradient;
+        padding: 0.5rem 1rem;
+        border-radius: $border-radius;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

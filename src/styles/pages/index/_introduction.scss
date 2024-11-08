@@ -1,6 +1,7 @@
-.section-container {
+.section-introduction {
   @include container;
-  @include grid(1fr 2fr, center, center, 6rem);
+  @include grid(1.4fr 1.6fr, center, center, 0);
+  justify-items: center;
 
   .intro-text {
     @include grid(1fr, null, null, 2rem);
@@ -10,7 +11,7 @@
     @include font($c8, 72, bold, 1.125);
     position: relative;
 
-    &:before {
+    &::before {
       display: block;
       position: absolute;
       content: "";
